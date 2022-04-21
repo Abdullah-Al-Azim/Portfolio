@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Barlow', sans-serif;
 }
 :root {
   --dark: #0f0f0f;
   --light-dark: #333333;
   --text-color: #faf8f7;
+  --greenish : #33c45a;
 }
 
 /* home page style/landing page */
@@ -89,10 +90,10 @@
 .nav____text:hover{
     font-size: 22px;
     padding-left: 14px;
-    color: #33c45a;
+    color: var(--greenish);
 }
 .nav___link:hover .nav__icon{
-    color: #33c45a;
+    color: var(--greenish);
 }
 .nav___link{
     display: flex;
@@ -107,4 +108,36 @@
     position: absolute;
     bottom: 0;
     text-align: center;
+    padding: 1rem;
+}
+
+
+/* right side style */
+.right-side{
+    width: 82%;
+    position: relative;
+    left: 18%;
+}
+.parallax{
+    background-image: url(/me.JPG);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.name__white{
+    color: var(--text-color);
+    margin: 0 !important;
+    margin-top: 5% !important;
+    padding-left: 1rem;
+}
+.extra{
+    font-size: 20px;
+}
+.name{
+    position: absolute;
+}
+.auto___typed{
+    border-bottom: 2px dashed var(--greenish);
 }
